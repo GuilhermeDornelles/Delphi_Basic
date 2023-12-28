@@ -3,8 +3,8 @@ object Main: TMain
   Top = 0
   Cursor = crHandPoint
   Caption = 'Main'
-  ClientHeight = 441
-  ClientWidth = 624
+  ClientHeight = 424
+  ClientWidth = 618
   Color = clActiveCaption
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -13,7 +13,7 @@ object Main: TMain
   Font.Style = []
   TextHeight = 15
   object lb_title: TLabel
-    Left = 16
+    Left = 8
     Top = 8
     Width = 99
     Height = 30
@@ -26,11 +26,26 @@ object Main: TMain
     ParentFont = False
   end
   object btn_save: TButton
-    Left = 296
-    Top = 288
+    Left = 520
+    Top = 376
     Width = 75
     Height = 25
     Caption = 'Save'
     TabOrder = 0
+    OnClick = btn_saveClick
+  end
+  object txt_lastName: TEdit
+    Left = 310
+    Top = 52
+    Width = 300
+    Height = 30
+    TabOrder = 1
+  end
+  object txt_name: TEdit
+    Left = 4
+    Top = 52
+    Width = 300
+    Height = 30
+    TabOrder = 2
   end
 end
